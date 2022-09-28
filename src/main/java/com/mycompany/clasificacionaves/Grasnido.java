@@ -4,16 +4,17 @@
  */
 package com.mycompany.clasificacionaves;
 
+import java.lang.System.Logger;
+
 /**
  *
- * @author Carlos
+ * @author User
  */
-public class Gallina extends Ave implements Volar{
-    @Override
+public class Grasnido implements TipoSonido{
+    
+    public static final Logger logger=LoggerFactory.getLogger(Grasnido.class);
     public void makeSound(){
-        System.out.println("Grasna");
-    }
-    public void vuelo(){
-        System.out.println("vuela con alas");
+        logger.debug("grasnando");
+        System.out.println("grasnando");
     }
 }
