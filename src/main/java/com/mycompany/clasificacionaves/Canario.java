@@ -8,7 +8,7 @@ package com.mycompany.clasificacionaves;
  *
  * @author Andres Gomez
  */
-public class Canario extends Ave {
+public class Canario extends Ave implements Volar{
     
     @Override
     public void makeSound(){
