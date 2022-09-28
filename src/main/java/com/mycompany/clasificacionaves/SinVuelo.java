@@ -10,11 +10,13 @@ import java.lang.System.Logger;
  *
  * @author Carlos
  */
-public class Grasnido implements TipoSonido{
+public class SinVuelo implements TipoVuelo {
     
-    public static final Logger logger=LoggerFactory.getLogger(Grasnido.class);
-    public void makeSound(){
-        logger.debug("grasnando");
-        System.out.println("grasnando");
+    public static final Logger logger=LoggerFactory.getLogger(SinVuelo.class);
+    
+    public void vuelo(){
+        logger.debug("no puedo volar");
+        System.out.println("no puedo volar");
     }
+    
 }
