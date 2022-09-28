@@ -8,13 +8,12 @@ package com.mycompany.clasificacionaves;
  *
  * @author Andres Gomez
  */
-public class Canario extends Ave implements Volar{
+public class Canario extends Ave{
+    public static final Logger logger = LoggerFactory.getlogger(Canario.class);
     
-    @Override
-    public void makeSound(){
-        System.out.println("Canta");
-    }
-    public void vuela(){
-        System.out.println("Vuela con alas");
+    public Canario(){
+        logger.debug("instanciando un canario");
+        tipoSonido=new Canto();
+        tipoVuelo=new VueloConAlas();
     }
 }
