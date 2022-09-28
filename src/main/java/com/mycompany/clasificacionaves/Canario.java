@@ -8,7 +8,7 @@ package com.mycompany.clasificacionaves;
  *
  * @author Andres Gomez
  */
-public class Canario {
+public class Canario extends Ave {
     
     public void makeSound(){
         System.out.println("Canta");
