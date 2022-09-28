@@ -8,12 +8,12 @@ package com.mycompany.clasificacionaves;
  *
  * @author Carlos
  */
-public class Gallina extends Ave implements Volar{
-    @Override
-    public void makeSound(){
-        System.out.println("Grasna");
-    }
-    public void vuelo(){
-        System.out.println("vuela con alas");
+public class Gallina extends Ave {
+    public static final Logger logger=LoggerFactory.getLogger(Gallina.class);
+    
+    public Gallina(){
+        logger.debug("instanciando una gallina");
+        tipoSonido=new Grasnido();
+        tipoVuelo=new VueloConAlas();
     }
 }
