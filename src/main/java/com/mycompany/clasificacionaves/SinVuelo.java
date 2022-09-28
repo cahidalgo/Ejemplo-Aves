@@ -10,13 +10,13 @@ import java.lang.System.Logger;
  *
  * @author Carlos
  */
-public class SinVuelo implements TipoVuelo {
+public class VueloConAlas implements TipoVuelo {
     
-    public static final Logger logger=LoggerFactory.getLogger(SinVuelo.class);
+    public static final Logger logger=LoggerFactory.getLogger(VueloConAlas.class);
     
     public void vuelo(){
-        logger.debug("no puedo volar");
-        System.out.println("no puedo volar");
+        logger.debug("Esta volando, aleteando");
+        System.out.println("Esta volando, aleteando");
     }
     
 }
