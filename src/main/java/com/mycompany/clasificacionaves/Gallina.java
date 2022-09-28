@@ -6,11 +6,14 @@ package com.mycompany.clasificacionaves;
 
 /**
  *
- * @author User
+ * @author Carlos
  */
-public class Gallina Ave{
+public class Gallina extends Ave{
     @Override
     public void makeSound(){
         System.out.println("Grasna");
+    }
+    public void vuelo(){
+        System.out.println("vuela con alas");
     }
 }
