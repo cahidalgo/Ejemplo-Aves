@@ -9,12 +9,12 @@ import org.sfl4j.Logger;
  * @author pipel
  */
 public class AvesTruz extends Ave {
-   public static final Logger logger= LoggerFactory.getLogger(Avestruz.class)
+   public static final Logger logger= LoggerFactory.getLogger(Avestruz.class);
    public Avestruz(){
        
        logger.debug("instanciaciando avestruz");
-       tipoSonido= new SinCanto();
-       tipoVuelo= new SinVuelo();
+       this.setTipoSonido(new SinCanto());
+       this.setTipoVuelo(new SinVuelo());
    }
 
 }

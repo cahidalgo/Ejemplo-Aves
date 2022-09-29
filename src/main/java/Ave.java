@@ -9,15 +9,34 @@
  * @author pipel
  */
 public abstract class Ave {
-   
+
     TipoSonido tipoSonido;
-    TipoVuelo tipoVuelo;
-    
-    public void realizaVuelo(){
+    private TipoVuelo tipoVuelo;
+
+    public TipoSonido getTipoSonido() {
+        return tipoSonido;
+    }
+
+    public void setTipoSonido(TipoSonido tipoSonido) {
+        this.tipoSonido = tipoSonido;
+    }
+
+    public TipoVuelo getTipoVuelo() {
+        return tipoVuelo;
+    }
+
+    public void setTipoVuelo(TipoVuelo tipoVuelo) {
+        this.tipoVuelo = tipoVuelo;
+    }
+
+    /**
+     *
+     */
+    public void realizaVuelo() {
         tipoVuelo.vuelo();
     }
-    
-    public void realizaSonido(){
+
+    public void realizaSonido() {
         tipoSonido.makeSound();
     }
 }
