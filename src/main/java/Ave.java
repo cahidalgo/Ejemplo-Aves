@@ -10,7 +10,7 @@
  */
 public abstract class Ave {
 
-    TipoSonido tipoSonido;
+    private TipoSonido tipoSonido;
     private TipoVuelo tipoVuelo;
 
     public TipoSonido getTipoSonido() {
