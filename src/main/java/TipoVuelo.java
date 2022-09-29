@@ -8,11 +8,8 @@
  *
  * @author pipel
  */
-public class AvesTruz extends Ave {
-
-   public Avestruz(){
-        tipoSonido= new SinCanto();
-        tipoVuelo= new SinVuelo();
-   }
-
+public interface TipoVuelo {
+    
+    void vuelo();
+    
 }

@@ -8,11 +8,12 @@
  *
  * @author pipel
  */
-public class AvesTruz extends Ave {
+public class SinCanto implements TipoSonido{
 
-   public Avestruz(){
-        tipoSonido= new SinCanto();
-        tipoVuelo= new SinVuelo();
-   }
-
+    public void makeSound(){
+        System.out.println("<<Silecio>>");
+    }
+    
+    
+    
 }

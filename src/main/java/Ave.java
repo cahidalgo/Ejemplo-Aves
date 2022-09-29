@@ -9,7 +9,15 @@
  * @author pipel
  */
 public abstract class Ave {
+   
+    TipoSonido tipoSonido;
+    TipoVuelo tipoVuelo;
     
-    public abstract void makeSound();
+    public void realizaVuelo(){
+        tipoVuelo.vuelo();
+    }
     
+    public void realizaSonido(){
+        tipoSonido.makeSound();
+    }
 }

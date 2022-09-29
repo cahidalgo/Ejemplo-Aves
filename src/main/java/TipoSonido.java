@@ -8,8 +8,8 @@
  *
  * @author pipel
  */
-public interface Volar {
+public interface TipoSonido {
     
-    void vuela();
+    void makeSound();
     
 }
