@@ -15,6 +15,13 @@ public class AvesTruz extends Ave {
         System.out.println("<<Silencio>>");
         
     }
+
+    @Override
+    public void vuelo() {
+        System.out.println("no vuela");
+    
+    
+    }
     
     
     
